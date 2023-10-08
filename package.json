@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "supa:login": "supabase login",
+    "supa:start": "supabase start"
+  },
+  "devDependencies": {
+    "supabase": "^1.100.1"
+  }
+}
