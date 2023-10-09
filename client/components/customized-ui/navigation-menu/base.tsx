@@ -60,7 +60,8 @@ export function BaseNavigationMenu() {
               想搵人材？係到睇下有冇合適嘅人啦！
               </ListItem>
               </Link>
-              
+
+
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
@@ -71,13 +72,13 @@ export function BaseNavigationMenu() {
           <NavigationMenuContent>
             <ul className="flex flex-col w-[200px] ">
               {components.map((component) => (
-              <Link href={component.href}>
+              <Link
+                key={component.title}
+                href={component.href}>
                 <ListItem
-                  key={component.title}
                   title={component.title}
                 >
                   {component.description}
-                
                 </ListItem>
                 </Link>
               ))}
